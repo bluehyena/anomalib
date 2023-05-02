@@ -3,13 +3,13 @@ Training
 
 By default
 `python tools/train.py <https://gitlab-icv.inn.intel.com/algo_rnd_team/anomaly/blob/samet/stfpm/tools/train.py>`__
-runs `STFPM <https://arxiv.org/pdf/2103.04257.pdf>`__ model
+runs `PADIM <https://arxiv.org/pdf/2011.08785.pdf>`__ model
 `MVTec AD <https://www.mvtec.com/company/research/datasets/mvtec-ad>`__
 ``leather`` dataset.
 
 .. code-block:: bash
 
-    python tools/train.py    # Train STFPM on MVTec AD leather
+    python tools/train.py    # Train PADIM on MVTec AD leather
 
 Training a model on a specific dataset and category requires further
 configuration. Each model has its own configuration file,
@@ -27,6 +27,6 @@ the scripts automatically finds the corresponding config file.
 
 .. code-block:: bash
 
-    python tools/train.py --model stfpm
+    python tools/train.py --model padim
 
 To see a list of currently supported models, refer to page: :ref:`available models`
